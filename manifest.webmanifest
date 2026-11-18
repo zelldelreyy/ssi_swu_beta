@@ -1,0 +1,54 @@
+{
+  "name": "SI 2026 — Sistem Informasi STMIK Widya Utama",
+  "short_name": "SI 2026",
+  "description": "Ruang digital angkatan Sistem Informasi 2026 STMIK Widya Utama: profil anggota, milestone, galeri, playlist, menfess, dan alat akademik.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0E14",
+  "theme_color": "#0A0E14",
+  "categories": ["education", "social", "productivity"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Anggota",
+      "short_name": "Anggota",
+      "url": "./anggota.html",
+      "description": "Lihat profil dan QR Instagram seluruh anggota"
+    },
+    {
+      "name": "Academic Hub",
+      "short_name": "Akademik",
+      "url": "./akademik.html",
+      "description": "Acak kelompok dan polling cepat"
+    },
+    {
+      "name": "Playlist & Menfess",
+      "short_name": "Menfess",
+      "url": "./playlist.html#menfess",
+      "description": "Playlist kelas dan kirim menfess"
+    }
+  ]
+}

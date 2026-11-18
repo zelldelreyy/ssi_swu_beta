@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SI 2026 — Hub Digital Sistem Informasi 2026 · STMIK Widya Utama</title>
+  <meta name="description" content="Ruang digital angkatan Sistem Informasi 2026 STMIK Widya Utama: profil anggota, milestone, galeri kegiatan, playlist kelas, menfess, dan generator kelompok presentasi.">
+  <meta name="theme-color" content="#0A0E14">
+  <link rel="canonical" href="https://si2026.vercel.app/">
+  <link rel="icon" href="assets/icons/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SI 2026">
+  <meta property="og:title" content="SI 2026 — Satu angkatan, satu ruang untuk bertumbuh">
+  <meta property="og:description" content="Hub digital Sistem Informasi 2026 STMIK Widya Utama. Kenalan dengan kelas, lihat perjalanan angkatan, dan pakai alat akademiknya.">
+  <meta property="og:image" content="https://si2026.vercel.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kartu sampul SI 2026 dengan emblem kelas">
+  <meta property="og:url" content="https://si2026.vercel.app/">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SI 2026 — Sistem Informasi 2026, STMIK Widya Utama">
+  <meta name="twitter:description" content="Hub digital angkatan: anggota, milestone, galeri, playlist, menfess, dan generator kelompok.">
+  <meta name="twitter:image" content="https://si2026.vercel.app/assets/og.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.4.0">
+  <script>
+    /* Tema dibaca sebelum render pertama: tanpa flash tema salah. */
+    (function () {
+      var root = document.documentElement;
+      var theme = "dark";
+      var lang = "id";
+      root.classList.add("js");
+      try { theme = localStorage.getItem("si:theme") === "light" ? "light" : "dark"; } catch (e) {}
+      root.setAttribute("data-theme", theme);
+      try { if (localStorage.getItem("si:contrast") === "high") root.setAttribute("data-contrast", "high"); } catch (e) {}
+      try {
+        var savedLang = localStorage.getItem("si:lang");
+        if (savedLang === "id" || savedLang === "en") lang = savedLang;
+        else lang = (navigator.language || navigator.userLanguage || "id").toLowerCase().indexOf("en") === 0 ? "en" : "id";
+      } catch (e) {}
+      root.setAttribute("lang", lang);
+      root.setAttribute("data-lang", lang);
+      if (lang === "en") root.classList.add("i18n-pending");
+      setTimeout(function () { root.classList.remove("i18n-pending"); }, 1200);
+    })();
+  </script>
+  <script>
+    /* Welcome screen: sekali per sesi browser; kalau JS mati, jangan pernah tampil. */
+    (function () {
+      var root = document.documentElement;
+      var seen = false;
+      var reduce = false;
+      try { seen = sessionStorage.getItem("si:splash-seen") === "1"; } catch (e) { seen = true; }
+      try { reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+      if (seen || reduce) {
+        /* Reduced motion: lewati seluruh sequence, cukup fade 200ms. */
+        if (reduce && !seen) {
+          root.classList.add("splash-reduced");
+          try { sessionStorage.setItem("si:splash-seen", "1"); } catch (e) {}
+        }
+        root.classList.add("splash-off");
+        return;
+      }
+      root.classList.add("splash-pending");
+      /* Jaring pengaman kalau splash.js gagal dimuat. */
+      setTimeout(function () {
+        root.classList.remove("splash-pending");
+        root.classList.add("splash-off");
+      }, 6000);
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sistem Informasi 2026 — STMIK Widya Utama",
+    "alternateName": "SI 2026",
+    "url": "https://si2026.vercel.app/",
+    "logo": "https://si2026.vercel.app/assets/icons/icon-512.png",
+    "description": "Hub digital angkatan Sistem Informasi 2026 STMIK Widya Utama.",
+    "sameAs": ["https://instagram.com/si2026.wu"]
+  }
+  </script>
+</head>
+<body>
+  <div id="splash-root"></div>
+
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="SI 2026 — beranda">
+          <img class="brand__mark" src="assets/logo-kelas-sm.png" alt="" width="38" height="38">
+          <span class="brand__text">
+            <span class="brand__name">SI 2026</span>
+            <span class="brand__sub">STMIK Widya Utama</span>
+          </span>
+        </a>
+        <div class="nav__links">
+          <a class="nav__link" href="index.html" aria-current="page">Beranda</a>
+          <a class="nav__link" href="tentang.html">Tentang</a>
+          <a class="nav__link" href="anggota.html">Anggota</a>
+          <a class="nav__link" href="milestone.html">Milestone</a>
+          <a class="nav__link" href="galeri.html">Galeri</a>
+          <a class="nav__link" href="playlist.html">Playlist</a>
+          <a class="nav__link" href="akademik.html">Akademik</a>
+        </div>
+        <div class="nav__actions">
+          <div class="lang-switch" data-lang-switch role="group" aria-label="Bahasa">
+            <button class="lang-switch__btn" type="button" data-lang-option="id" aria-pressed="true" title="Bahasa Indonesia"><span aria-hidden="true">🇮🇩</span><span class="lang-switch__code">ID</span></button>
+            <button class="lang-switch__btn" type="button" data-lang-option="en" aria-pressed="false" title="English"><span aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
+          </div>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Ganti tema" title="Ganti tema">
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-contrast-toggle aria-pressed="false" aria-label="Aktifkan kontras tinggi" title="Kontras tinggi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none"/></svg>
+          </button>
+          <a class="btn btn--primary btn--sm nav__cta" href="akademik.html"><span data-icon="shuffle" aria-hidden="true"></span>Acak kelompok</a>
+          <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Buka menu">
+            <svg class="when-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="when-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="nav__sheet" id="nav-sheet">
+          <a class="nav__link" href="index.html" aria-current="page"><span>Beranda</span> <span aria-hidden="true">01</span></a>
+          <a class="nav__link" href="tentang.html"><span>Tentang kelas</span> <span aria-hidden="true">02</span></a>
+          <a class="nav__link" href="anggota.html"><span>Anggota</span> <span aria-hidden="true">03</span></a>
+          <a class="nav__link" href="milestone.html"><span>Milestone</span> <span aria-hidden="true">04</span></a>
+          <a class="nav__link" href="galeri.html"><span>Galeri</span> <span aria-hidden="true">05</span></a>
+          <a class="nav__link" href="playlist.html"><span>Playlist &amp; Menfess</span> <span aria-hidden="true">06</span></a>
+          <a class="nav__link" href="akademik.html"><span>Academic Hub</span> <span aria-hidden="true">07</span></a>
+          <a class="nav__link" href="kredit.html"><span>Kredit</span> <span aria-hidden="true">08</span></a>
+          <a class="nav__link" href="pengaturan.html"><span>Pengaturan</span> <span aria-hidden="true">09</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__depth" aria-hidden="true">
+        <span class="hero__orb hero__orb--cyan" data-depth="0.16"></span>
+        <span class="hero__orb hero__orb--gold" data-depth="0.34"></span>
+        <span class="hero__orb hero__orb--orange" data-depth="0.52"></span>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>Sistem Informasi 2026 · STMIK Widya Utama</p>
+          <h1 class="hero__title" data-reveal style="--i:1" data-i18n-html="home.hero.title">
+            Satu angkatan,<br>
+            <em class="accent-text">satu ruang</em><br>
+            untuk bertumbuh.
+          </h1>
+          <p class="hero__lead" data-reveal style="--i:2" data-i18n="home.hero.lead">
+            Hub digital kelas Sistem Informasi 2026. Tempat profil teman sekelas,
+            jejak perjalanan angkatan, foto kegiatan, playlist kelas, dan alat bantu
+            akademik berkumpul dalam satu ruang yang rapi.
+          </p>
+          <div class="hero__actions" data-reveal style="--i:3">
+            <a class="btn btn--primary" href="anggota.html">
+              Kenalan dengan kelas <span data-icon="arrow" aria-hidden="true"></span>
+            </a>
+            <a class="btn btn--ghost" href="milestone.html">Lihat perjalanan</a>
+            <button class="icon-btn" type="button" data-share aria-label="Bagikan website kelas" title="Bagikan">
+              <span data-icon="share" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="hero__meta" data-reveal style="--i:4">
+            <span><span data-icon="pin" aria-hidden="true"></span> STMIK Widya Utama</span>
+            <span><span data-icon="users" aria-hidden="true"></span> 157 anggota aktif</span>
+            <span><span data-icon="calendar" aria-hidden="true"></span> Angkatan 2026</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal="right" style="--i:2">
+          <div class="emblem-card" data-tilt data-tilt-max="7">
+            <img class="emblem-card__img" src="assets/logo-kelas.png" alt="Logo kelas Sistem Informasi 2026" width="360" height="360">
+            <div class="emblem-card__cap">
+              <span class="mono">Est. 2026</span>
+              <span class="badge badge--cyan">PWA ready</span>
+            </div>
+          </div>
+
+          <div class="countdown" data-countdown>
+            <div class="countdown__top">
+              <span class="countdown__label">Menuju</span>
+              <span class="countdown__label" data-countdown-date>—</span>
+            </div>
+            <p class="countdown__title" data-countdown-title style="font-family:var(--font-display);font-size:.95rem;margin-top:6px;">Agenda terdekat</p>
+            <div class="countdown__grid" role="timer" aria-live="off">
+              <div class="countdown__cell"><span class="countdown__num" data-cd-d>00</span><span class="countdown__unit">Hari</span></div>
+              <div class="countdown__cell"><span class="countdown__num" data-cd-h>00</span><span class="countdown__unit">Jam</span></div>
+              <div class="countdown__cell"><span class="countdown__num" data-cd-m>00</span><span class="countdown__unit">Menit</span></div>
+              <div class="countdown__cell"><span class="countdown__num" data-cd-s>00</span><span class="countdown__unit">Detik</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK NAV -->
+    <section class="section section--tight" aria-labelledby="jelajahi-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">Mulai dari sini</p>
+          <h2 class="section__title" id="jelajahi-title">Jelajahi ruang kelas</h2>
+        </div>
+        <div class="quicknav" data-reveal-group>
+          <a class="quicknav__card" href="anggota.html" data-reveal>
+            <span class="quicknav__num">01 / ANGGOTA</span>
+            <span class="quicknav__title">Siapa yang ada di kelas</span>
+            <span class="quicknav__desc">20 kartu anggota dengan foto dan QR Instagram.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+          <a class="quicknav__card" href="milestone.html" data-reveal>
+            <span class="quicknav__num">02 / MILESTONE</span>
+            <span class="quicknav__title">Perjalanan angkatan</span>
+            <span class="quicknav__desc">Dari hari pertama sampai target semester depan.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+          <a class="quicknav__card" href="galeri.html" data-reveal>
+            <span class="quicknav__num">03 / GALERI</span>
+            <span class="quicknav__title">Foto kegiatan</span>
+            <span class="quicknav__desc">Fotbar, makrab, belajar bareng — dimuat bertahap.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+          <a class="quicknav__card" href="playlist.html" data-reveal>
+            <span class="quicknav__num">04 / PLAYLIST</span>
+            <span class="quicknav__title">Lagu kelas &amp; menfess</span>
+            <span class="quicknav__desc">Playlist Spotify plus papan pesan anonim yang dimoderasi.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+          <a class="quicknav__card" href="akademik.html" data-reveal>
+            <span class="quicknav__num">05 / AKADEMIK</span>
+            <span class="quicknav__title">Acak kelompok presentasi</span>
+            <span class="quicknav__desc">Bagi kelompok secara adil, lalu salin ke WhatsApp.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+          <a class="quicknav__card" href="tentang.html" data-reveal>
+            <span class="quicknav__num">06 / TENTANG</span>
+            <span class="quicknav__title">Profil anggota</span>
+            <span class="quicknav__desc">Dosen wali, wajah kelas, dan vCard untuk ACC.</span>
+            <span class="quicknav__arrow" data-icon="arrow" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section--tight" aria-labelledby="sekilas-title">
+      <div class="container">
+        <div class="section__head section__head--split" data-reveal>
+          <div>
+            <p class="eyebrow">Sekilas angkatan</p>
+            <h2 class="section__title" id="sekilas-title">Kelas kecil, cerita panjang.</h2>
+          </div>
+          <p class="section__desc">
+            Satu angkatan yang tumbuh bersama sejak PKKMB 2026 — dari kelas pagi,
+            begadang tugas, sampai proyek kelas pertama.
+          </p>
+        </div>
+        <div class="stat-row" id="stat-row" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- FEATURED MEMBERS -->
+    <section class="section" aria-labelledby="wajah-title">
+      <div class="container">
+        <div class="section__head section__head--split" data-reveal>
+          <div>
+            <p class="eyebrow">Wajah kelas</p>
+            <h2 class="section__title" id="wajah-title">Kenalan dulu dengan teman sekelas.</h2>
+          </div>
+          <p class="section__desc">Empat wajah pertama dari 157 anggota SI 2026. Klik kartu untuk profil dan QR Instagram.</p>
+        </div>
+        <div class="member-strip" id="home-members" data-reveal-group></div>
+        <div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;" data-reveal>
+          <a class="btn btn--ghost" href="anggota.html">Lihat semua 157 anggota <span data-icon="arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE PREVIEW -->
+    <section class="section" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section__head section__head--split" data-reveal>
+          <div>
+            <p class="eyebrow">Jejak langkah</p>
+            <h2 class="section__title" id="timeline-title">Perjalanan yang sudah kita lewati.</h2>
+          </div>
+          <p class="section__desc">Geser ke samping untuk melihat linimasa lengkap.</p>
+        </div>
+        <div class="timeline" data-reveal>
+          <div class="timeline__rail" id="home-timeline"></div>
+        </div>
+        <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;" data-reveal>
+          <a class="btn btn--ghost" href="milestone.html">Buka semua milestone <span data-icon="arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <span class="badge badge--gold">Untuk dosen &amp; teman</span>
+            <h2 class="cta-band__title" id="cta-title">Bagikan link ini, ACC-nya jadi rapi.</h2>
+            <p class="cta-band__desc">
+              Link menampilkan preview Open Graph yang jelas di WhatsApp — lengkap dengan
+              logo kelas. Pasang juga sebagai aplikasi supaya akses anggota lebih cepat.
+            </p>
+          </div>
+          <div class="cta-band__actions">
+            <button class="btn btn--primary" type="button" data-share>
+              <span data-icon="share" aria-hidden="true"></span> Bagikan link
+            </button>
+            <button class="btn btn--ghost" type="button" data-install>
+              <span data-icon="download" aria-hidden="true"></span> Pasang aplikasi
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="SI 2026 — beranda">
+            <img class="brand__mark" src="assets/logo-kelas-sm.png" alt="" width="38" height="38">
+            <span class="brand__text">
+              <span class="brand__name">SI 2026</span>
+              <span class="brand__sub">STMIK Widya Utama</span>
+            </span>
+          </a>
+          <p>Ruang digital angkatan Sistem Informasi 2026. Dibangun oleh kelas, untuk kelas.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;">
+            <a class="btn btn--ghost btn--sm" href="https://instagram.com/si2026.wu" target="_blank" rel="noopener">Instagram kelas</a>
+            <button class="btn btn--ghost btn--sm" type="button" data-install hidden>Pasang aplikasi</button>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navigasi</h4>
+          <div class="footer__links">
+            <a href="tentang.html">Tentang kelas</a>
+            <a href="anggota.html">Anggota</a>
+            <a href="milestone.html">Milestone</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="playlist.html">Playlist &amp; Menfess</a>
+            <a href="akademik.html">Academic Hub</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Kelas</h4>
+          <div class="footer__links">
+            <a href="kredit.html">Kredit &amp; kontributor</a>
+            <a href="mailto:halo@si2026.id">halo@si2026.id</a>
+            <a href="https://chat.whatsapp.com/XXXXXXXXXXXXXX" target="_blank" rel="noopener">Grup WhatsApp</a>
+            <a href="admin.html" rel="nofollow">Panel moderator</a>
+            <a href="pengaturan.html">Pengaturan</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> SI 2026 · STMIK Widya Utama</span>
+        <span class="mono">Dibuat oleh angkatan, untuk angkatan</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
+  <script src="js/vendor/framer-motion.js"></script>
+  <script src="js/i18n/id.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/i18n.js"></script>
+  <script src="js/splash.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

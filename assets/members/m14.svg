@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="Foto placeholder Melati Anggraini">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0A0E14"/><stop offset=".55" stop-color="#0B2028"/><stop offset="1" stop-color="#0A0E14"/>
+  </linearGradient>
+  <linearGradient id="b0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A9FC4"/><stop offset="1" stop-color="#4FD1E5"/></linearGradient>
+  <linearGradient id="b1" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FD1E5"/><stop offset="1" stop-color="#2A9FC4"/></linearGradient>
+  <linearGradient id="b2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0B2028"/><stop offset="1" stop-color="#2A9FC4"/></linearGradient>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/>
+<g filter="blur(0)"><circle cx="548" cy="201" r="192" fill="url(#b0)" opacity="0.32"/><circle cx="429" cy="389" r="197" fill="url(#b1)" opacity="0.57"/><circle cx="605" cy="479" r="185" fill="url(#b2)" opacity="0.42"/></g>
+<rect width="900" height="600" fill="url(#vig)"/>
+<g opacity=".13" stroke="#2A9FC4" stroke-width="1">
+  <line x1="90" y1="0" x2="90" y2="600"/><line x1="180" y1="0" x2="180" y2="600"/><line x1="270" y1="0" x2="270" y2="600"/><line x1="360" y1="0" x2="360" y2="600"/><line x1="450" y1="0" x2="450" y2="600"/><line x1="540" y1="0" x2="540" y2="600"/><line x1="630" y1="0" x2="630" y2="600"/><line x1="720" y1="0" x2="720" y2="600"/><line x1="810" y1="0" x2="810" y2="600"/>
+</g>
+<text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle" font-family="Sora, Segoe UI, sans-serif" font-size="180" font-weight="700" fill="#E8ECF1" opacity=".16" letter-spacing="6">MA</text>
+<text x="48" y="554" font-family="JetBrains Mono, Consolas, monospace" font-size="18" fill="#2A9FC4" opacity=".8" letter-spacing="3">SI 2026 / 14</text>
+<text x="852" y="554" text-anchor="end" font-family="JetBrains Mono, Consolas, monospace" font-size="15" fill="#E8ECF1" opacity=".45" letter-spacing="2">FOTO PLACEHOLDER</text>
+</svg>

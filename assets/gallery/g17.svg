@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Foto kegiatan placeholder 17">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0A0E14"/><stop offset=".6" stop-color="#0B2028"/><stop offset="1" stop-color="#10151F"/></linearGradient>
+  <linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A9FC4"/><stop offset="1" stop-color="#4FD1E5"/></linearGradient>
+  <linearGradient id="g1" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FD1E5"/><stop offset="1" stop-color="#0B2028"/></linearGradient>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".8"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bg)"/>
+<ellipse cx="689" cy="666" rx="467" ry="318" fill="url(#g0)" opacity="0.51"/><ellipse cx="445" cy="676" rx="574" ry="254" fill="url(#g1)" opacity="0.26"/><ellipse cx="1152" cy="371" rx="219" ry="185" fill="url(#g0)" opacity="0.40"/><ellipse cx="134" cy="370" rx="363" ry="354" fill="url(#g1)" opacity="0.30"/>
+<rect width="1200" height="800" fill="url(#vig)"/>
+<rect x="24" y="24" width="1152" height="752" fill="none" stroke="#E8ECF1" stroke-opacity=".08"/>
+<text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="72" fill="#E8ECF1" opacity=".22" letter-spacing="8">SI 2026</text>
+<text x="50%" y="740" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#2A9FC4" opacity=".75" letter-spacing="4">FOTO KEGIATAN / 17</text>
+</svg>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel Moderator — SI 2026</title>
+  <meta name="description" content="Panel moderasi menfess kelas SI 2026. Halaman lokal, tidak diindeks mesin pencari.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0A0E14">
+  <link rel="icon" href="assets/icons/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.4.0">
+  <script>
+    /* Tema dibaca sebelum render pertama: tanpa flash tema salah. */
+    (function () {
+      var root = document.documentElement;
+      var theme = "dark";
+      var lang = "id";
+      root.classList.add("js");
+      try { theme = localStorage.getItem("si:theme") === "light" ? "light" : "dark"; } catch (e) {}
+      root.setAttribute("data-theme", theme);
+      try { if (localStorage.getItem("si:contrast") === "high") root.setAttribute("data-contrast", "high"); } catch (e) {}
+      try {
+        var savedLang = localStorage.getItem("si:lang");
+        if (savedLang === "id" || savedLang === "en") lang = savedLang;
+        else lang = (navigator.language || navigator.userLanguage || "id").toLowerCase().indexOf("en") === 0 ? "en" : "id";
+      } catch (e) {}
+      root.setAttribute("lang", lang);
+      root.setAttribute("data-lang", lang);
+      if (lang === "en") root.classList.add("i18n-pending");
+      setTimeout(function () { root.classList.remove("i18n-pending"); }, 1200);
+    })();
+  </script>
+</head>
+<body class="admin-page">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html" aria-label="SI 2026 — beranda">
+          <img class="brand__mark" src="assets/logo-kelas-sm.png" alt="" width="38" height="38">
+          <span class="brand__text"><span class="brand__name">SI 2026</span><span class="brand__sub">Panel moderator</span></span>
+        </a>
+        <div class="nav__links">
+          <a class="nav__link" href="index.html">Beranda</a>
+          <a class="nav__link" href="playlist.html#menfess">Menfess</a>
+          <a class="nav__link" href="kredit.html">Kredit</a>
+        </div>
+        <div class="nav__actions">
+          <div class="lang-switch" data-lang-switch role="group" aria-label="Bahasa">
+            <button class="lang-switch__btn" type="button" data-lang-option="id" aria-pressed="true" title="Bahasa Indonesia"><span aria-hidden="true">🇮🇩</span><span class="lang-switch__code">ID</span></button>
+            <button class="lang-switch__btn" type="button" data-lang-option="en" aria-pressed="false" title="English"><span aria-hidden="true">🇬🇧</span><span class="lang-switch__code">EN</span></button>
+          </div>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Ganti tema" title="Ganti tema">
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
+          <button class="icon-btn" type="button" data-contrast-toggle aria-pressed="false" aria-label="Aktifkan kontras tinggi" title="Kontras tinggi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none"/></svg>
+          </button>
+          <a class="btn btn--ghost btn--sm nav__cta" href="playlist.html#menfess"><span data-icon="arrow" aria-hidden="true"></span>Lihat menfess</a>
+          <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Buka menu">
+            <svg class="when-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <svg class="when-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="nav__sheet" id="nav-sheet">
+          <a class="nav__link" href="index.html"><span>Beranda</span> <span aria-hidden="true">01</span></a>
+          <a class="nav__link" href="playlist.html#menfess"><span>Playlist &amp; Menfess</span> <span aria-hidden="true">06</span></a>
+          <a class="nav__link" href="kredit.html"><span>Kredit</span> <span aria-hidden="true">08</span></a>
+          <a class="nav__link" href="pengaturan.html"><span>Pengaturan</span> <span aria-hidden="true">09</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:clamp(24px,4vw,36px);">
+      <div class="container page-hero__grid">
+        <div>
+          <p class="eyebrow" data-reveal>Khusus pengurus</p>
+          <h1 class="page-hero__title" data-reveal style="--i:1" data-i18n-html="page.admin.titleHtml">Panel<br>moderator.</h1>
+          <p class="page-hero__desc" data-reveal style="--i:2">
+            Setujui atau tolak menfess yang masuk sebelum tampil di halaman Playlist &amp; Menfess.
+            Halaman ini tidak ditautkan di navigasi utama dan tidak diindeks mesin pencari.
+          </p>
+        </div>
+        <div class="page-hero__meta" data-reveal="right" style="--i:2">
+          <span class="badge badge--cyan" id="admin-mode-badge">Mode lokal</span>
+          <span class="badge badge--gold" id="admin-updated">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="admin-title">
+      <div class="container">
+        <div class="admin-shell">
+          <aside class="admin-side" aria-label="Ringkasan moderasi">
+            <div class="hub-panel">
+              <div class="hub-panel__head">
+                <h2>Ringkasan</h2>
+                <span class="chip" id="admin-remote-chip">localStorage</span>
+              </div>
+              <div class="admin-stats">
+                <div class="admin-stat">
+                  <span class="admin-stat__num" id="pending-count">0</span>
+                  <span class="admin-stat__label">Menunggu</span>
+                </div>
+                <div class="admin-stat">
+                  <span class="admin-stat__num" id="approved-count">0</span>
+                  <span class="admin-stat__label">Terbit</span>
+                </div>
+              </div>
+              <p class="hub-note" id="admin-mode-note">
+                Data moderasi disimpan di browser ini saja. Menfess yang dikirim dari
+                perangkat lain tidak akan muncul di sini.
+              </p>
+              <div class="toolbar">
+                <button class="btn btn--ghost btn--sm" type="button" id="admin-refresh">
+                  <span data-icon="spark" aria-hidden="true"></span> Muat ulang
+                </button>
+                <button class="btn btn--quiet btn--sm" type="button" id="admin-clear">Kosongkan antrean</button>
+              </div>
+              <a class="btn btn--ghost btn--sm btn--block" href="playlist.html#menfess">Buka halaman menfess</a>
+            </div>
+
+            <div class="admin-warn" id="admin-remote-warning" hidden data-i18n-html="admin.remoteWarn">
+              <strong>Mode Supabase aktif.</strong>
+              <p>
+                Antrean pending tidak bisa dimoderasi dari halaman statis ini. Buka
+                <em>Table Editor → menfess</em> di dashboard Supabase, lalu ubah kolom
+                <code>status</code> menjadi <code>approved</code> atau hapus barisnya.
+              </p>
+            </div>
+
+            <div class="admin-warn admin-warn--soft" data-i18n-html="admin.localWarn">
+              <strong>Tanpa login.</strong>
+              <p>
+                Siapa pun yang membuka file ini di browser yang sama bisa memoderasi.
+                Jangan bagikan tautan <code>admin.html</code> ke luar pengurus.
+              </p>
+            </div>
+          </aside>
+
+          <div class="admin-main">
+            <div class="section__head" data-reveal>
+              <p class="eyebrow">Antrean</p>
+              <h2 class="section__title" id="admin-title">Menunggu persetujuan.</h2>
+              <p class="section__desc">
+                Baca dulu isinya. Setujui kalau aman dan relevan, tolak kalau kasar,
+                spam, atau menyebut orang lain tanpa izin.
+              </p>
+            </div>
+
+            <div class="admin-list" id="pending-list" aria-live="polite"></div>
+
+            <div class="section__head" style="margin-top:36px;" data-reveal>
+              <p class="eyebrow">Sudah terbit</p>
+              <h2 class="section__title" style="font-size:clamp(1.25rem,2.4vw,1.6rem);">Terbaru di halaman publik.</h2>
+            </div>
+            <div class="admin-list" id="approved-list" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> SI 2026 · STMIK Widya Utama</span>
+        <span class="mono">Panel moderator · tidak diindeks</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/menfess-store.js"></script>
+  <script src="js/i18n/id.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/vendor/react.production.min.js"></script>
+  <script src="js/vendor/react-dom.production.min.js"></script>
+  <script src="js/vendor/framer-motion.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
